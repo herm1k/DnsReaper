@@ -1,0 +1,12 @@
+{
+  "cloudflare": {
+    "api_base": "https://api.cloudflare.com/client/v4",
+    "api_token": "REPLACE_WITH_YOUR_TOKEN"
+  },
+  "ignored_suffixes": [
+    ".acm-validations.aws",
+    ".dv.googlehosted.com",
+    ".sendgrid.net",
+    ".example.net"
+  ]
+}
