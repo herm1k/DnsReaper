@@ -36,7 +36,7 @@ LOGGING_FORMAT = "%(levelname)s - %(asctime)s.%(msecs)03d: %(message)s"
 DEFAULT_CLOUDFLARE_API = "https://api.cloudflare.com/client/v4"
 DEFAULT_PUBLIC_RESOLVERS = ["1.1.1.1", "8.8.8.8"]
 MAX_CNAME_DEPTH = 20
-BANNER = r"""
+DNSREAPER_BANNER = r"""
                  ...
                ;::::;
              ;::::; :;
@@ -58,8 +58,14 @@ BANNER = r"""
    `:::::`::::::::::::;'`:;::#                O
     `:::::`::::::::;' /  / `:#
      ::::::`:::::;'  /  /   `#
-"""
 
+        ____  _   _ ____  ____                           
+       |  _ \| \ | / ___||  _ \ ___  __ _ _ __   ___ _ __ 
+       | | | |  \| \___ \| |_) / _ \/ _` | '_ \ / _ \ '__|
+       | |_| | |\  |___) |  _ <  __/ (_| | |_) |  __/ |   
+       |____/|_| \_|____/|_| \_\___|\__,_| .__/ \___|_|   
+                                         |_|              
+"""
 
 
 @dataclass
