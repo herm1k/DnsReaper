@@ -36,6 +36,30 @@ LOGGING_FORMAT = "%(levelname)s - %(asctime)s.%(msecs)03d: %(message)s"
 DEFAULT_CLOUDFLARE_API = "https://api.cloudflare.com/client/v4"
 DEFAULT_PUBLIC_RESOLVERS = ["1.1.1.1", "8.8.8.8"]
 MAX_CNAME_DEPTH = 20
+BANNER = r"""
+                 ...
+               ;::::;
+             ;::::; :;
+           ;:::::'   :;
+          ;:::::;     ;.
+         ,:::::'       ;           OOO\
+         ::::::;       ;          OOOOO\
+         ;:::::;       ;         OOOOOOOO
+        ,;::::::;     ;'         / OOOOOOO
+      ;:::::::::`. ,,,;.        /  / DOOOOOO
+    .';:::::::::::::::::;,     /  /     DOOOO
+   ,::::::;::::::;;;;::::;,   /  /        DOOO
+  ;`::::::`'::::::;;;::::: ,#/  /          DOOO
+  :`:::::::`;::::::;;::: ;::#  /            DOOO
+  ::`:::::::`;:::::::: ;::::# /              DOO
+  `:`:::::::`;:::::: ;::::::#/               DOO
+   :::`:::::::`;; ;:::::::::##                OO
+   ::::`:::::::`;::::::::;:::#                OO
+   `:::::`::::::::::::;'`:;::#                O
+    `:::::`::::::::;' /  / `:#
+     ::::::`:::::;'  /  /   `#
+"""
+
 
 
 @dataclass
@@ -273,6 +297,7 @@ def parse_args() -> argparse.Namespace:
 
 
 def main() -> int:
+    print(BANNER)
     args = parse_args()
     logging.basicConfig(
         format=LOGGING_FORMAT,
