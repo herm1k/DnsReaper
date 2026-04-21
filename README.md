@@ -1,5 +1,27 @@
 # DNSReaper
-
+```text
+                 ...
+               ;::::;
+             ;::::; :;
+           ;:::::'   :;
+          ;:::::;     ;.
+         ,:::::'       ;           OOO\
+:::
+         ;:::::;       ;         OOOOOOOO
+        ,;::::::;     ;'         / OOOOOOO
+      ;:::::::::`. ,,,;.        /  / DOOOOOO
+    .';:::::::::::::::::;,     /  /     DOOOO
+   ,::::::;::::::;;;;::::;,   /  /        DOOO
+  ;`::::::`'::::::;;;::::: ,#/  /          DOOO
+  :`:::::::`;::::::;;::: ;::#  /            DOOO
+  ::`:::::::`;:::::::: ;::::# /              DOO
+  `:`:::::::`;:::::: ;::::::#/               DOO
+:::
+:::
+   `:::::`::::::::::::;'`:;::#                O
+    `:::::`::::::::;' /  / `:#
+:::
+```
 DNSReaper is a small Python CLI for detecting **CNAME takeover candidates**.
 
 It follows CNAME chains and flags hostnames whose terminal target does **not** resolve to a public A or AAAA record. The output is intended for analyst review; a "candidate" is not automatically a confirmed vulnerability.
