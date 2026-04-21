@@ -108,18 +108,7 @@ Typical statuses:
 - Review candidates manually before claiming takeover risk.
 - Some providers intentionally return private or non-public targets in hybrid environments.
 
-## Suggested public repo structure
 
-```text
-DNSReaper/
-  dnsreaper.py
-  requirements.txt
-  config.example.json
-  sample_domains.txt
-  Dockerfile
-  .gitignore
-  README.md
-```
 
 ## License
 
